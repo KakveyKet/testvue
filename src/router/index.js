@@ -5,21 +5,26 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: HomeView
+      path: "/",
+      name: "home",
+      component: HomeView,
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue')
+      path: "/about",
+      name: "about",
+      component: () => import("../views/AboutView.vue"),
     },
     {
-      path: '/blog',
-      name: 'blog',
-      component: () => import('../views/Blog.vue')
+      path: "/blog",
+      name: "blog",
+      component: () => import("../views/Blog.vue"),
+    },
+    {
+      path: "/myassignment",
+      name: "myassignment",
+      component: () => import("../views/MyAssignment.vue"),
     }
-  ]
-})
+  ],
+});
 
 export default router
